@@ -1,2 +1,0 @@
-Open VS Code
-Create file named index and extension of .html that is index.html
