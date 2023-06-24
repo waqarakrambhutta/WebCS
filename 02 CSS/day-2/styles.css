@@ -1,0 +1,57 @@
+/* we will start in a min or two */
+/* let me know if yo have any query */
+
+/* tags */
+/* p {
+ color: blue;
+}
+
+.classname {
+  font-size: 10px;
+}
+
+#id {
+  padding: 40px;
+}
+
+.student {
+  font-size: 100px;
+}
+
+#ag7784 {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.a {
+  border: 2px solid black;
+}
+
+.a p {
+  color: blue;
+}
+
+.bscs > div p {
+  color: aqua;
+}
+
+.bscs li.a {
+  color: brown;
+} */
+
+/* outside boundary => margin */
+/* inside boundary => padding */
+/* between margin and padding a boundary => border */
+
+* {
+  /* background-color: black;
+    color: white; */
+  margin: 0;
+  padding: 0;
+}
+/* div .first {
+    border: 20px red solid;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    margin: 10px;
+  } */
