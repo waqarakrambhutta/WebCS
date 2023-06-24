@@ -6,11 +6,11 @@
  color: blue;
 }
 
-.classname {
+.bscs {
   font-size: 10px;
 }
 
-#id {
+#nawazshareef {
   padding: 40px;
 }
 
@@ -24,19 +24,19 @@
 
 .a {
   border: 2px solid black;
-}
-
-.a p {
-  color: blue;
-}
-
-.bscs > div p {
-  color: aqua;
-}
-
-.bscs li.a {
-  color: brown;
 } */
+
+/* .bscs .b > p {
+  color: pink;
+} */
+/* 
+  .bscs > div p {
+    color: aqua;
+  }
+  
+  .bscs li.a {
+    color: brown;
+  } */
 
 /* outside boundary => margin */
 /* inside boundary => padding */
@@ -44,14 +44,21 @@
 
 * {
   /* background-color: black;
-    color: white; */
-  margin: 0;
-  padding: 0;
+      color: white; */
+  /* margin: 0;
+    padding: 0; */
 }
 /* div .first {
-    border: 20px red solid;
-    background-color: white;
-    color: black;
-    padding: 20px;
-    margin: 10px;
-  } */
+      border: 20px red solid;
+      background-color: white;
+      color: black;
+      padding: 20px;
+      margin: 10px;
+    } */
+
+p {
+  /* margin: 10px; */
+  border: 2px red solid;
+  padding: 20px;
+  background-color: aqua;
+}
