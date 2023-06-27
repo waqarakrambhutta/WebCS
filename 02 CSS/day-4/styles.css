@@ -1,28 +1,48 @@
 * {
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
+  background-color: gray;
+  color: white;
 }
-ul.navbar {
-  margin-top: 20px;
+.logo {
+  padding: 10px;
+  color: aquamarine;
+  cursor: pointer;
+}
+nav {
+  margin-top: 30px;
   margin-left: 50px;
-  list-style-type: none;
+  margin-right: 50px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
 }
+
 li {
   float: left;
+  list-style-type: none;
 }
-a {
+li a {
   text-decoration: none;
-  color: rgb(89, 89, 89);
+  /* color: black; */
   padding: 10px;
-  margin: 5px;
-  transition: all ease-in-out 0.2s;
 }
-a:hover {
+
+.button button {
+  padding: 10px;
+  border: none;
+  background-color: aquamarine;
   border-radius: 10px;
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  padding: 10px;
-  margin: 5px;
-  background-color: black;
-  color: aliceblue;
+  color: black;
+  cursor: pointer;
+  /* heigh */
+}
+.buttton button {
+  padding: 20px;
+  border: solid black;
+  background-color: aquamarine;
+  border-radius: 10px;
+  color: rgb(160, 15, 15);
+  cursor: pointer;
+  /* heigh */
 }
