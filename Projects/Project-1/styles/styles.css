@@ -100,14 +100,17 @@ button {
   margin-bottom: 16px;
 }
 
-#destination {
+#destination,
+#travel,
+#testimonial section {
   display: flex;
   flex-wrap: wrap;
   margin: 140px 300px;
   justify-content: space-between;
 }
 
-#destination div {
+#destination div,
+#travel div {
   /* margin: 5px; */
   width: 300px;
   margin-bottom: 64px;
@@ -116,7 +119,8 @@ button {
   border-radius: 10px; */
 }
 
-#destination div:hover {
+#destination div:hover,
+#travel div:hover {
   /* width: 300px; */
   /* margin-bottom: 64px; */
   border: 1px solid gray;
@@ -125,17 +129,38 @@ button {
   transition: all 0.3s ease-in-out;
 }
 
-#destination img {
+#destination img,
+#travel img {
   width: 280px;
   height: 200px;
   margin-bottom: 16px;
   border-radius: 10px;
 }
 
-#destination p {
+#destination p,
+#travel p {
   margin-top: 8px;
 }
-
-#destination h2 {
+h2,
+#testimonial p {
   text-align: center;
+}
+
+#testimonial section div {
+  width: 300px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #f1f1f1;
+  border-radius: 15px;
+  margin: 15px 0;
+  padding: 0 15px;
+}
+
+#testimonial section img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
 }
