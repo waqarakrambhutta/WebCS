@@ -1,17 +1,25 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 /* Navbar */
-
+button {
+  cursor: pointer;
+}
 .nav {
-  margin: 10px;
-  margin-top: 20px;
+  /* margin: 10px; */
+  padding: 20px;
   display: flex;
   /* margin: 5px; */
   justify-content: space-between;
   align-items: center;
-  width: 97vw;
+  width: 100vw;
+  backdrop-filter: blur(10px);
+  /* color: white; */
+  font-size: 20px;
+  /* transition: all 0.3s ease-in-out; */
 }
 .navv {
   position: absolute;
@@ -21,7 +29,8 @@
   padding: 5px;
   border: none;
   border-radius: 10px;
-  background-color: azure;
+  /* background-color: yellowgreen; */
+  font-size: large;
 }
 .ul {
   list-style-type: none;
@@ -30,25 +39,36 @@
   float: left;
   margin: 10px;
   padding: 5px;
+  cursor: pointer;
 }
-.ul li:hover {
+.ul li a {
+  /* float: left;*/
+  margin: 10px;
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+.ul li a:hover {
   /* float: left; */
-  /* margin: 10px; */
+  margin: 10px;
   color: blueviolet;
   background-color: azure;
-  /* padding: 5px; */
+  padding: 5px;
   border: none;
   border-radius: 10px;
+  transition: all 0.3s ease-in-out;
 }
 .nav-par {
   position: relative;
 }
 
 button {
-  padding: 5px;
+  padding: 10px;
   border: none;
   border-radius: 10px;
   background-color: azure;
+  /* backdrop-filter: blur(10px); */
 }
 
 .hero {
@@ -58,10 +78,12 @@ button {
   background-size: cover;
   text-align: center;
   display: flex;
+  background-attachment: fixed;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   gap: 16px;
+  color: white;
 }
 
 #about {
@@ -86,12 +108,25 @@ button {
 }
 
 #destination div {
+  /* margin: 5px; */
   width: 300px;
   margin-bottom: 64px;
+  /* border: 1px solid gray;
+  padding: 10px;
+  border-radius: 10px; */
+}
+
+#destination div:hover {
+  /* width: 300px; */
+  /* margin-bottom: 64px; */
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
 }
 
 #destination img {
-  width: 300px;
+  width: 280px;
   height: 200px;
   margin-bottom: 16px;
   border-radius: 10px;
