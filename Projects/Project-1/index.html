@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project 1</title>
     <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/override.css" />
   </head>
 
   <body>
@@ -213,14 +214,26 @@
     </div>
     <form id="contact-us">
       <h2>Contact Us</h2>
-      <input type="text" name="name" id="name" value="" />
-      <input type="text" name="title" id="title" />
-      <textarea name="message" id="message" cols="30" rows="10"></textarea>
+      <input
+        placeholder="Jane Doe"
+        type="text"
+        name="name"
+        id="name"
+        value=""
+      />
+      <input placeholder="Title" name="title" id="title" />
+      <textarea
+        placeholder="Some Description"
+        name="message"
+        id="message"
+        cols="30"
+        rows="10"
+      ></textarea>
       <button>Send Message</button>
     </form>
     <footer>
-      &copy; 2023 Explore Pakistan. All rights reserved. <br />Designed by
-      Zahoor Ahmad
+      <span> &copy; 2023 Explore Pakistan. All rights reserved.</span>
+      <span>Designed by Zahoor Ahmad and made responsive by talha</span>
     </footer>
     <div class="section"></div>
   </body>
