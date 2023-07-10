@@ -100,14 +100,17 @@ button {
   margin-bottom: 16px;
 }
 
-#destination {
+#destination,
+#travel,
+#testimonial section {
   display: flex;
   flex-wrap: wrap;
   margin: 140px 300px;
   justify-content: space-between;
 }
 
-#destination div {
+#destination div,
+#travel div {
   /* margin: 5px; */
   width: 300px;
   margin-bottom: 64px;
@@ -116,7 +119,8 @@ button {
   border-radius: 10px; */
 }
 
-#destination div:hover {
+#destination div:hover,
+#travel div:hover {
   /* width: 300px; */
   /* margin-bottom: 64px; */
   border: 1px solid gray;
@@ -125,21 +129,22 @@ button {
   transition: all 0.3s ease-in-out;
 }
 
-#destination img {
+#destination img,
+#travel img {
   width: 280px;
   height: 200px;
   margin-bottom: 16px;
   border-radius: 10px;
 }
 
-#destination p {
+#destination p,
+#travel p {
   margin-top: 8px;
 }
-
-#destination h2 {
+h2,
+#testimonial p {
   text-align: center;
 }
-
 
 /* Contact Form Styles */
 form input,
@@ -189,4 +194,93 @@ footer p {
   justify-content: space-between;
 }
 
+#testimonial section div {
+  width: 300px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #f1f1f1;
+  border-radius: 15px;
+  margin: 15px;
+  padding: 0 15px;
+}
 
+#testimonial section img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+#contact-us {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 24px;
+}
+
+#contact-us button {
+  background: #333333;
+  color: #fff;
+  width: 148px;
+  height: 48;
+  border-radius: 4;
+}
+
+#contact-us input,
+textarea {
+  padding: 4px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 16px !important;
+  text-align: center;
+  padding: 20px;
+  margin-top: 16px;
+}
+
+@media screen and (max-width: 1240px) {
+  #about,
+  #destination,
+  #travel,
+  #testimonial section {
+    margin: 64px 150px;
+  }
+  #testimonial section,
+  #destination,
+  #travel {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 625px) {
+  #about,
+  #destination,
+  #travel,
+  #testimonial section {
+    margin: 24px 64px;
+  }
+  #contact-us {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .nav {
+    align-items: flex-start !important;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  nav li {
+    margin-top: 0px !important;
+  }
+  #contact-us button {
+    width: 100%;
+  }
+}
