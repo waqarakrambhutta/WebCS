@@ -1,0 +1,52 @@
+*{
+    /* Css Reset */
+    margin: 0;
+    padding: 0;
+}
+
+.ahmad{
+    /* We make ahmad div a grid */
+    display: grid;
+    /* Grid Template areas specify named grid area as we have done */
+    grid-template-areas:
+     "header header header"
+     "nav content sidebar"
+     "footer footer footer";
+     /* Height Given for a good view */
+     height: 100vh;
+     /* Grid gap give both of row and column */
+     grid-gap: 10px;
+     /* Here we have say make column of 1fr and 4fr and 1fr */
+     grid-template-columns: 1fr 4fr 1fr;
+        /* Here we have say make row of 70px 1fr 80px */
+     grid-template-rows: 70px 1fr 80px;
+    
+    }
+
+nav,header,article,aside,footer{
+        border: 2px solid black;
+}
+
+header{
+    /* The grid-area property  used to assign a name to a grid item. Named grid items  then be referenced to by the grid-template-areas(as done above in ahmad class) property of the grid container(ahmad). */
+    grid-area: header;
+    background-color: yellow;
+}
+nav{
+    grid-area: nav;
+    background-color: rgb(0, 255, 68);
+}
+article{
+    grid-area: content;
+    background-color: cyan;
+
+}
+aside{
+    grid-area: sidebar;
+    background-color: chartreuse;
+}
+footer{
+    grid-area: footer;
+    background-color: blue;
+
+}
