@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+  user-select: none;
 }
 /* Navbar */
 
@@ -15,6 +16,7 @@
   align-items: center;
   width: 100vw;
   backdrop-filter: blur(10px);
+  /* background-color: rgba(0, 0, 0, 0.211); */
   /* color: white; */
   font-size: 20px;
   /* transition: all 0.3s ease-in-out; */
@@ -32,6 +34,7 @@
   cursor: pointer;
   color: white;
 }
+
 .ul {
   list-style-type: none;
 }
@@ -40,6 +43,17 @@
   margin: 10px;
   padding: 5px;
   cursor: pointer;
+  transition: 0.3s;
+}
+.ul li:hover,
+.logo:hover {
+  border-bottom: 1px solid white;
+  backdrop-filter: blur(50px);
+  background-color: rgba(255, 255, 255, 0.396);
+  transition: 0.3s;
+  transform: scale(1.2);
+  border-radius: 10px;
+  padding: 5px;
 }
 .ul li a {
   /* float: left;*/
@@ -52,17 +66,34 @@
 .ul li a:hover {
   /* float: left; */
   margin: 10px;
-  color: blueviolet;
-  background-color: azure;
+  /* color: blueviolet; */
+  /* background-color: azure; */
+
   padding: 5px;
   border: none;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
 }
-.nav-par {
-  position: relative;
+::-webkit-scrollbar {
+  width: 10px;
 }
 
+::-webkit-scrollbar-track {
+  background: #f1f1f16e;
+  /* border-radius: 10px; */
+  backdrop-filter: blur(10px);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8888887c;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8888889f;
+  transition: 0.3s;
+}
 button {
   cursor: pointer;
   padding: 15px 20px;
@@ -70,9 +101,15 @@ button {
   /* padding: 10px; */
   border: none;
   font-size: 1.2rem;
+  transition: 0.3s;
   color: white;
   background-color: rgba(245, 245, 245, 0.39);
   backdrop-filter: blur(50px);
+}
+button:hover {
+  transform: scale(1.3);
+  transition: 0.5s all;
+  border-bottom: 1px solid white;
 }
 .hero {
   background-image: url("../images/hero-image.jpg");
@@ -106,28 +143,45 @@ button {
 #destination,
 #travel,
 #testimonial section {
+  padding: 20px;
   display: flex;
   flex-wrap: wrap;
   margin: 140px 300px;
+
   justify-content: space-between;
 }
 
 #destination div,
-#travel div {
-  /* margin: 5px; */
+#travel div,
+#testimonial div {
   width: 300px;
   margin-bottom: 64px;
-  /* border: 1px solid gray;
+  transition: all 0.3s;
+  /* border: 1px solid gray; */
+  /* background-color: rgb(61, 60, 60); */
+  /* color: white; */
   padding: 10px;
-  border-radius: 10px; */
+  border-radius: 10px;
+}
+#destination div::after,
+#travel div::after {
+  content: "Read More...";
+  cursor: pointer;
+  /* margin-top: 10px; */
+  color: blue;
+  text-decoration: underline;
+  /* text-decoration-color: blue; */
 }
 
 #destination div:hover,
-#travel div:hover {
+#travel div:hover,
+#testimonial div:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   /* width: 300px; */
   /* margin-bottom: 64px; */
-  border: 1px solid gray;
-  padding: 10px;
+  /* border: 1px solid gray; */
+  /* padding: 10px; */
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
 }
@@ -150,6 +204,9 @@ h2,
 }
 
 /* Contact Form Styles */
+.contact {
+  padding: 5em;
+}
 form {
   display: flex;
   flex-direction: column;
@@ -181,6 +238,7 @@ form textarea {
 
 form button {
   padding: 12px 24px;
+  margin: 2em;
   background-color: #333;
   color: #fff;
   border: none;
@@ -229,6 +287,7 @@ footer p {
   height: 80px;
   width: 80px;
   border-radius: 50%;
+  background-size: cover;
 }
 /* #contact-us {
   width: 60%;
