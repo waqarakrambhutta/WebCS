@@ -1,0 +1,10 @@
+.logo {
+  cursor: pointer;
+}
+.margin {
+  margin-top: 10px;
+}
+.padding {
+  padding: 50px;
+  font-size: 30px;
+}
